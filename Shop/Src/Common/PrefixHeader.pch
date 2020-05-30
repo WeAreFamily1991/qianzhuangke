@@ -1,0 +1,71 @@
+//
+//  PrefixHeader.pch
+//  Shop
+//
+//  Created by BWJ on 2018/12/28.
+//  Copyright © 2018 SanTie. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIImage+Extension.h"
+#import "UIView+HUD.h"
+#import "UIBarButtonItem+DCBarButtonItem.h"
+#import "Constants.h"
+#import "Utility.h"
+#import "YYKit.h"
+#import "DCSpeedy.h" //便捷方法
+#import <Masonry/Masonry.h>
+#import "LoginVC.h"
+#import "DCObjManager.h"  //存取
+#import "DCNotificationCenterName.h" //通知
+#import <CDDPagerController/DCPagerController.h>
+#import "UIButton+ImageTitleSpacing.h"
+#import <MJRefresh.h>
+//#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "FSScrollContentView.h"
+#import <SDWebImage/UIButton+WebCache.h>
+#import "CanUsePhoto.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <CoreLocation/CLLocationManager.h>
+#import <Photos/PHPhotoLibrary.h>
+#import "MBProgressHUD+DR.h"
+#import "JSONModel.h"
+#import "UIImage+BlurImage.h"
+#import "UITool.h"
+#import "UIView+Helper.h"
+#import "AppMethods.h"
+#import "NSString+Extension.h"
+#import "UIImageView+WebCache.h"
+#import "ParmMacro.h"
+#import "UILabel+Extensions.h"
+#import "ToolManager.h"
+#import "AppDefaultUtil.h"
+#import "NetworkManager.h"
+#import "DCConsts.h" // 常量
+#import "DRAppManager.h"
+#import "DCNavigationController.h"
+#import "SNAPI.h"
+#import "MJExtension.h"
+#import "User.h"
+#import "SNURL.h"
+#import "SNTool.h"
+#import "SNIOTTool.h"
+#import "DRBaseModel.h"
+#import "DCUpDownButton.h"
+#import "ATChooseCountView.h"
+#import "STBaseViewController.h"
+#import "GoodsShareModel.h"
+#import <WebKit/WebKit.h>
+#import "UIButton+LXExpandBtn.h"
+#import "UIColor+LXExpand.h"
+#import "Reachability.h"
+#import "DRCacheDataManager.h"
+#import "HCDragingView.h"
+#import "UILabel+Custom.h"
+#import "UIButton+NZCustom.h"
+#endif /* PrefixHeader_pch */

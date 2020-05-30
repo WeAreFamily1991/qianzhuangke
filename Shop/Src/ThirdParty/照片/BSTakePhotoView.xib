@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9o8-aJ-Alv" customClass="BSTakePhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-Dc-SMB">
+                    <rect key="frame" x="3" y="3" width="104" height="104"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTm-hY-Sv9">
+                    <rect key="frame" x="90" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="M6f-o1-yMy"/>
+                        <constraint firstAttribute="width" constant="20" id="byx-gd-GP6"/>
+                    </constraints>
+                    <state key="normal" image="set_shanchu"/>
+                    <connections>
+                        <action selector="deleteButtonClick:" destination="9o8-aJ-Alv" eventType="touchUpInside" id="RA1-eD-tGp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cXW-Dc-SMB" secondAttribute="bottom" constant="3" id="Gej-tT-NO7"/>
+                <constraint firstItem="cXW-Dc-SMB" firstAttribute="top" secondItem="9o8-aJ-Alv" secondAttribute="top" constant="3" id="Jil-cq-iY6"/>
+                <constraint firstAttribute="trailing" secondItem="cXW-Dc-SMB" secondAttribute="trailing" constant="3" id="KBp-ep-bXl"/>
+                <constraint firstItem="iTm-hY-Sv9" firstAttribute="top" secondItem="9o8-aJ-Alv" secondAttribute="top" id="Tjj-hy-Tfv"/>
+                <constraint firstAttribute="trailing" secondItem="iTm-hY-Sv9" secondAttribute="trailing" id="Vbj-ah-JTe"/>
+                <constraint firstItem="cXW-Dc-SMB" firstAttribute="leading" secondItem="9o8-aJ-Alv" secondAttribute="leading" constant="3" id="yzP-Xr-Nau"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="cXW-Dc-SMB" id="gmW-pI-5dP"/>
+                <outlet property="deleteButton" destination="iTm-hY-Sv9" id="OTR-vw-y5J"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="77.361319340329842"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="set_shanchu" width="20" height="20"/>
+    </resources>
+</document>

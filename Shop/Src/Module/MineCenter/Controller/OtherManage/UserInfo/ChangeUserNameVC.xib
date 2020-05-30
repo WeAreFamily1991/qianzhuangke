@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeUserNameVC">
+            <connections>
+                <outlet property="codeTF" destination="ISM-Q0-sqm" id="Q8J-CF-YGu"/>
+                <outlet property="codeView" destination="RF9-yt-d63" id="Xdg-OW-q9t"/>
+                <outlet property="imgCodeBtn" destination="0kY-ta-2sp" id="Jcz-IW-ws0"/>
+                <outlet property="imgCodeTF" destination="7qF-V3-AtQ" id="fEY-HX-x91"/>
+                <outlet property="imgCodeView" destination="vFZ-yq-II6" id="NGY-c4-edd"/>
+                <outlet property="phoneTF" destination="wnN-nn-8mc" id="bK4-O3-u1m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lF1-h5-12r">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="原手机号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-Ss-rBC">
+                            <rect key="frame" x="10" y="15" width="92" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wnN-nn-8mc">
+                            <rect key="frame" x="100" y="10" width="210" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmO-ZV-Ypd">
+                            <rect key="frame" x="20" y="49" width="335" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nXr-BY-1Sf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CY-7G-k4y">
+                    <rect key="frame" x="0.0" y="50" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="图文验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQp-F8-pQn">
+                            <rect key="frame" x="10" y="15" width="92" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入图文验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qF-V3-AtQ">
+                            <rect key="frame" x="100" y="10" width="140" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHB-EA-bHa">
+                            <rect key="frame" x="20" y="49" width="335" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFZ-yq-II6">
+                            <rect key="frame" x="275" y="10" width="90" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kY-ta-2sp">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="imgCodeBtnClick:" destination="-1" eventType="touchUpInside" id="T7G-V9-qFM"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="aFD-MS-dsq"/>
+                                <constraint firstAttribute="height" constant="30" id="dyn-4Z-lLA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Hrp-A3-vhL"/>
+                        <constraint firstAttribute="trailing" secondItem="vFZ-yq-II6" secondAttribute="trailing" constant="10" id="VC9-Nf-cqf"/>
+                        <constraint firstItem="vFZ-yq-II6" firstAttribute="top" secondItem="7CY-7G-k4y" secondAttribute="top" constant="10" id="Wth-da-51w"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wu-pt-CYP">
+                    <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="短信验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foc-b8-oLu">
+                            <rect key="frame" x="10" y="15" width="92" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISM-Q0-sqm">
+                            <rect key="frame" x="100" y="10" width="120" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6k0-fg-h7J">
+                            <rect key="frame" x="20" y="49" width="335" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RF9-yt-d63">
+                            <rect key="frame" x="275" y="10" width="90" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="EgL-f1-4cn"/>
+                                <constraint firstAttribute="width" constant="90" id="fRp-Jb-om3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RF9-yt-d63" firstAttribute="top" secondItem="2wu-pt-CYP" secondAttribute="top" constant="10" id="ZaS-Cz-Yx6"/>
+                        <constraint firstAttribute="height" constant="50" id="eY5-IB-Jr0"/>
+                        <constraint firstAttribute="trailing" secondItem="RF9-yt-d63" secondAttribute="trailing" constant="10" id="pMT-sS-9Pv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lF1-h5-12r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2JU-yv-q5v"/>
+                <constraint firstItem="7CY-7G-k4y" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Agf-td-6cm"/>
+                <constraint firstItem="lF1-h5-12r" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="HpJ-S0-Brj"/>
+                <constraint firstItem="7CY-7G-k4y" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Rc2-Ru-kuG"/>
+                <constraint firstItem="2wu-pt-CYP" firstAttribute="top" secondItem="7CY-7G-k4y" secondAttribute="bottom" id="XP3-3f-y7r"/>
+                <constraint firstItem="2wu-pt-CYP" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Zzb-EG-klQ"/>
+                <constraint firstItem="2wu-pt-CYP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="cWg-lJ-Buu"/>
+                <constraint firstItem="7CY-7G-k4y" firstAttribute="top" secondItem="lF1-h5-12r" secondAttribute="bottom" id="eBz-8x-oQz"/>
+                <constraint firstItem="lF1-h5-12r" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="qsu-EQ-ZQl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="140" y="153"/>
+        </view>
+    </objects>
+</document>

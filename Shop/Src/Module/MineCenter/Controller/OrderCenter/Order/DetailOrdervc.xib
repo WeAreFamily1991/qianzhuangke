@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailOrdervc">
+            <connections>
+                <outlet property="againBuyBtn" destination="b61-dw-KEm" id="jfb-Ls-AdS"/>
+                <outlet property="bottomView" destination="xvb-n3-Yyg" id="biq-Lz-PCh"/>
+                <outlet property="cancelBtn" destination="mLs-ZF-MZh" id="NSj-l6-DFx"/>
+                <outlet property="saleOutBtn" destination="r8O-DX-oj7" id="OMA-MA-ziF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-n3-Yyg">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-ZF-MZh">
+                            <rect key="frame" x="180" y="10.5" width="85" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="mLs-ZF-MZh" secondAttribute="height" multiplier="35:12" id="19T-af-x7M"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="取消订单">
+                                <color key="titleColor" red="0.96862745100000003" green="0.1764705882" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="确认收货"/>
+                            <connections>
+                                <action selector="cancelBtnClick:" destination="-1" eventType="touchUpInside" id="EDN-gO-kmi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b61-dw-KEm">
+                            <rect key="frame" x="275" y="10.5" width="85" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="b61-dw-KEm" secondAttribute="height" multiplier="35:12" id="IqW-Mo-YL6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="再次购买">
+                                <color key="titleColor" red="0.96862745100000003" green="0.1764705882" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="againBuyBtnClick:" destination="-1" eventType="touchUpInside" id="Qjt-aP-4fb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8O-DX-oj7">
+                            <rect key="frame" x="85" y="10.5" width="85" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="LGM-pv-bMt"/>
+                                <constraint firstAttribute="width" secondItem="r8O-DX-oj7" secondAttribute="height" multiplier="35:12" id="NAJ-jB-8VY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="整单申请售后">
+                                <color key="titleColor" red="0.96862745100000003" green="0.1764705882" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="saleOutBtnClick:" destination="-1" eventType="touchUpInside" id="zRE-eb-FfL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b61-dw-KEm" firstAttribute="width" secondItem="r8O-DX-oj7" secondAttribute="width" id="2MH-TW-lri"/>
+                        <constraint firstItem="mLs-ZF-MZh" firstAttribute="centerY" secondItem="b61-dw-KEm" secondAttribute="centerY" id="9wl-wt-meX"/>
+                        <constraint firstAttribute="height" constant="50" id="CTF-Tm-NA9"/>
+                        <constraint firstItem="b61-dw-KEm" firstAttribute="centerY" secondItem="xvb-n3-Yyg" secondAttribute="centerY" id="Ofd-WU-mB5"/>
+                        <constraint firstItem="b61-dw-KEm" firstAttribute="leading" secondItem="mLs-ZF-MZh" secondAttribute="trailing" constant="10" id="a8J-cz-Pvt"/>
+                        <constraint firstAttribute="trailing" secondItem="b61-dw-KEm" secondAttribute="trailing" constant="15" id="apn-Ic-yC4"/>
+                        <constraint firstItem="r8O-DX-oj7" firstAttribute="centerY" secondItem="mLs-ZF-MZh" secondAttribute="centerY" id="fDy-x4-xp7"/>
+                        <constraint firstItem="mLs-ZF-MZh" firstAttribute="width" secondItem="r8O-DX-oj7" secondAttribute="width" id="of2-N2-5HU"/>
+                        <constraint firstItem="mLs-ZF-MZh" firstAttribute="leading" secondItem="r8O-DX-oj7" secondAttribute="trailing" constant="10" id="x3e-08-rgW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xvb-n3-Yyg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JqM-qz-4rH"/>
+                <constraint firstAttribute="bottom" secondItem="xvb-n3-Yyg" secondAttribute="bottom" id="W9H-yV-6nP"/>
+                <constraint firstAttribute="trailing" secondItem="xvb-n3-Yyg" secondAttribute="trailing" id="qbv-7C-Ats"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

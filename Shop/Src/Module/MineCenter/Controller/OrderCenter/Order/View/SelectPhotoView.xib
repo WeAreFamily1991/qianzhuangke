@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectPhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTb-hc-UGj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHU-iE-aau">
+                            <rect key="frame" x="0.0" y="30" width="375" height="67"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="温馨提示：\n您的订单已超过平台退换货期限，如您有售后问题请联系卖家解决。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6k-zU-ttW">
+                                    <rect key="frame" x="10" y="8" width="355" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="0.38823529410000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FH1-ad-zkA">
+                            <rect key="frame" x="0.0" y="117" width="375" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="立即提交">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="commitBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="TCs-TW-urW"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sH-a1-hvy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="温馨提示：您的退款将在退货成功后3个工作日内退还至原支付账户内。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poy-G3-J0p">
+                                    <rect key="frame" x="10" y="0.0" width="355" height="51"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="0.38823529410000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="保证原包装、原品牌，不影响二次销售，未进行二次加工。（如产生运费由客户承担）。查看退换货规则" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azg-8f-TWI">
+                                    <rect key="frame" x="10" y="40" width="355" height="52"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.96470588239999999" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="96" id="lGz-Gj-AXS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7sH-a1-hvy" firstAttribute="top" secondItem="cTb-hc-UGj" secondAttribute="top" id="S7g-0P-61o"/>
+                        <constraint firstAttribute="trailing" secondItem="7sH-a1-hvy" secondAttribute="trailing" id="fwk-cq-N1O"/>
+                        <constraint firstItem="7sH-a1-hvy" firstAttribute="leading" secondItem="cTb-hc-UGj" secondAttribute="leading" id="hrv-uw-nQh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cTb-hc-UGj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9VR-i2-iOy"/>
+                <constraint firstItem="cTb-hc-UGj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="C4k-9u-7f1"/>
+                <constraint firstItem="cTb-hc-UGj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aRJ-Qv-8fO"/>
+                <constraint firstItem="cTb-hc-UGj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="n24-sh-JV0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="commitBtn" destination="FH1-ad-zkA" id="W5k-uE-WZg"/>
+                <outlet property="contentLab" destination="Azg-8f-TWI" id="5he-i1-bLs"/>
+                <outlet property="nomelView" destination="xHU-iE-aau" id="bRA-RY-35w"/>
+                <outlet property="selectView" destination="7sH-a1-hvy" id="pfJ-NA-bmK"/>
+            </connections>
+            <point key="canvasLocation" x="151.44927536231884" y="-36.830357142857139"/>
+        </view>
+    </objects>
+</document>

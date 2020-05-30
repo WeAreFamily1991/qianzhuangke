@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="SelectCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W85-JO-Nq9">
+                        <rect key="frame" x="10" y="5" width="355" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本地云仓（三铁配送）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-7v-te3">
+                                <rect key="frame" x="8" y="10" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本地云仓（三铁配送）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TX-ia-L0T">
+                                <rect key="frame" x="8" y="40" width="247" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noselect" translatesAutoresizingMaskIntoConstraints="NO" id="9rd-xN-i1A">
+                                <rect key="frame" x="330" y="27.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="YO3-c1-Jeq"/>
+                                    <constraint firstAttribute="height" constant="15" id="o9X-rv-3AR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9rd-xN-i1A" secondAttribute="trailing" constant="10" id="KIU-3q-hfn"/>
+                            <constraint firstItem="9rd-xN-i1A" firstAttribute="centerY" secondItem="W85-JO-Nq9" secondAttribute="centerY" id="osH-GN-n8z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="W85-JO-Nq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Yt0-zu-gTB"/>
+                    <constraint firstAttribute="trailing" secondItem="W85-JO-Nq9" secondAttribute="trailing" constant="10" id="h8f-xa-hfK"/>
+                    <constraint firstAttribute="bottom" secondItem="W85-JO-Nq9" secondAttribute="bottom" constant="5" id="i6u-Df-DwE"/>
+                    <constraint firstItem="W85-JO-Nq9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="uqJ-gK-PAJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="backView" destination="W85-JO-Nq9" id="AV9-lM-CDG"/>
+                <outlet property="contentLab" destination="6TX-ia-L0T" id="Xlr-uG-2lp"/>
+                <outlet property="selectIMG" destination="9rd-xN-i1A" id="msp-Lc-SDL"/>
+                <outlet property="titleLab" destination="cBV-7v-te3" id="b5J-uw-dkr"/>
+            </connections>
+            <point key="canvasLocation" x="176.80000000000001" y="170.91454272863569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noselect" width="60" height="60"/>
+    </resources>
+</document>

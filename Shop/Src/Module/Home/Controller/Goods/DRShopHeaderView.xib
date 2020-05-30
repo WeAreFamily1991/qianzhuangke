@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DRShopHeaderView" id="iN0-l3-epB" customClass="DRShopHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product" translatesAutoresizingMaskIntoConstraints="NO" id="0JZ-Qz-GpS" customClass="santie_default_img">
+                    <rect key="frame" x="15" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0JZ-Qz-GpS" secondAttribute="height" id="DcH-kH-DWU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="嘉兴东驰金属制品有限公司" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aS-JO-pbn">
+                    <rect key="frame" x="65" y="11" width="234" height="20"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开票方：浙江三铁信息技术有限公司丨现金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ara-8P-gay">
+                    <rect key="frame" x="65" y="31" width="300" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohG-Ei-ohB">
+                    <rect key="frame" x="307" y="10" width="60" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="nPz-Uf-uge"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="客服" image="custom-service">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="phoneBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="JVF-0d-wgJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-VG-68J">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <connections>
+                        <action selector="backBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="FNt-s1-roy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ohG-Ei-ohB" firstAttribute="leading" secondItem="5aS-JO-pbn" secondAttribute="trailing" constant="8" id="0f1-dL-2gk"/>
+                <constraint firstItem="Ara-8P-gay" firstAttribute="height" secondItem="5aS-JO-pbn" secondAttribute="height" id="0o7-hk-YlZ"/>
+                <constraint firstItem="Ara-8P-gay" firstAttribute="top" secondItem="5aS-JO-pbn" secondAttribute="bottom" id="BJ0-AU-ZwK"/>
+                <constraint firstItem="fZu-VG-68J" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="CNX-HX-jRF"/>
+                <constraint firstItem="ohG-Ei-ohB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Gdz-lk-ZWi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ohG-Ei-ohB" secondAttribute="trailing" constant="8" id="KF1-fb-8N5"/>
+                <constraint firstItem="5aS-JO-pbn" firstAttribute="height" secondItem="0JZ-Qz-GpS" secondAttribute="height" multiplier="1:2" id="NSA-oC-8xP"/>
+                <constraint firstItem="0JZ-Qz-GpS" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Nhw-sz-sOW"/>
+                <constraint firstItem="Ara-8P-gay" firstAttribute="leading" secondItem="5aS-JO-pbn" secondAttribute="leading" id="Nvj-9R-2ly"/>
+                <constraint firstItem="fZu-VG-68J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WUY-Kh-HrC"/>
+                <constraint firstItem="0JZ-Qz-GpS" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:1.5" id="ZkG-Om-XwI"/>
+                <constraint firstItem="5aS-JO-pbn" firstAttribute="top" secondItem="0JZ-Qz-GpS" secondAttribute="top" constant="1" id="b44-iv-Lnz"/>
+                <constraint firstItem="fZu-VG-68J" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dbH-ba-SVh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ara-8P-gay" secondAttribute="trailing" constant="10" id="esh-Tg-xkN"/>
+                <constraint firstItem="0JZ-Qz-GpS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="nb3-f5-Rjh"/>
+                <constraint firstItem="5aS-JO-pbn" firstAttribute="leading" secondItem="0JZ-Qz-GpS" secondAttribute="trailing" constant="10" id="p25-oa-p6w"/>
+                <constraint firstItem="fZu-VG-68J" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rtV-D2-rgF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="IconIMG" destination="0JZ-Qz-GpS" id="ZI5-wp-AKi"/>
+                <outlet property="companyNameLab" destination="5aS-JO-pbn" id="9H9-X5-0wx"/>
+                <outlet property="contentLab" destination="Ara-8P-gay" id="bmv-R0-Qcf"/>
+                <outlet property="phoneBtn" destination="ohG-Ei-ohB" id="uzM-cB-hDq"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="-208.69565217391306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="custom-service" width="24" height="23"/>
+        <image name="product" width="200" height="200"/>
+    </resources>
+</document>
